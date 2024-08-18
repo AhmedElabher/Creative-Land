@@ -1,0 +1,677 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  background-color: #111419;
+  font-family: "Open Sans", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+:root {
+  --main-color: #93a7c0;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  position: relative;
+}
+.landing-page {
+  background-image: url(../Images/landing.png);
+  padding: 20px;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+}
+.landing-page h3 {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+}
+.landing-page .header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.landing-page .links {
+  display: flex;
+  justify-content: space-between;
+}
+.landing-page .links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing-page .links ul li {
+  list-style: none;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.landing-page .links ul li a {
+  text-decoration: none;
+  color: var(--main-color);
+  transition: 0.3s;
+}
+.landing-page .links ul li a:hover {
+  font-weight: bold;
+}
+.landing-page .links button {
+  background-color: var(--main-color);
+  font-weight: 800;
+  width: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+  border-style: none;
+  font-size: 20px;
+  height: 50px;
+  margin: auto;
+  transition: 0.3s;
+}
+.landing-page .links button:hover {
+  border: 1px solid #333;
+}
+.container .burger-icon {
+  color: var(--main-color);
+  font-size: 27px;
+  display: none;
+  margin-top: 17px;
+  cursor: pointer;
+}
+/* Login page start */
+.landing-page .login-page {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  background-color: #111419d0;
+  width: 400px;
+  height: 500px;
+  right: 40%;
+  top: 200%;
+}
+
+.landing-page .login-page .login {
+  margin: 50px auto;
+}
+.landing-page .login-page .login p {
+  color: var(--main-color);
+}
+.landing-page .login-page .login .sign-in {
+  margin: 25px auto;
+  display: list-item;
+}
+.landing-page .login-page .login a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+}
+/* Login page End */
+.center {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+.center input {
+  display: block;
+  margin: 30px auto;
+}
+.center .information h4 {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 50px;
+}
+.center .information input {
+  border-radius: 10px;
+  width: 100%;
+  height: 70px;
+  position: relative;
+}
+.center .information input::placeholder {
+  padding: 10px;
+}
+.center .information .search {
+  background-color: var(--main-color);
+  font-weight: bold;
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  border-style: none;
+  transition: 0.3s;
+}
+.center .information .search:hover {
+  border: 1px solid #333;
+}
+.center .sign-up input {
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+}
+.center .sign-up input::placeholder {
+  padding: 10px;
+}
+.center .sign-up button {
+  background-color: var(--main-color);
+  font-weight: bold;
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-style: none;
+  transition: 0.3s;
+}
+.center .sign-up button:hover {
+  border: 1px solid #333;
+}
+.center .icon {
+  position: relative;
+}
+.center .icon i {
+  position: absolute;
+  bottom: 35%;
+  left: 95%;
+}
+/* Skilles land Start */
+.skills-land {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-land .text h3 {
+  color: var(--main-color);
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  padding: 20px;
+}
+.skills img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 30px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.skills img:hover {
+  border-radius: 0%;
+}
+.skills h3 {
+  color: var(--main-color);
+  text-align: center;
+}
+/* Skilles land End */
+/* Contact Start */
+.contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.contact .contact-text {
+  margin-top: 50px;
+}
+.contact .contact-text h4 {
+  color: var(--main-color);
+  font-size: 100px;
+
+  letter-spacing: -10px;
+  font-weight: 800;
+  opacity: 0.3;
+}
+.contact .contact-text h3 {
+  color: var(--main-color);
+  font-size: 150px;
+
+  font-weight: bolder;
+  margin-top: -200px;
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.contact .contact-info {
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contact .contact-info p {
+  color: var(--main-color);
+}
+.contact .contact-info a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Contact End */
+/* Footer Start */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  background-color: var(--main-color);
+}
+/* Footer End */
+
+/* Resposive Start */
+@media (max-width: 576px) {
+  /* Small Devices */
+  .container {
+    max-width: 536px;
+  }
+  .landing-page .links {
+    display: none;
+  }
+  .landing-page .burger-icon {
+    display: block;
+  }
+
+  .landing-page .header h3 {
+    font-size: 20px;
+  }
+  .center .information h4 {
+    font-size: 35px;
+  }
+  .center .information input {
+    width: 300px;
+    height: 45px;
+  }
+  .center .information .icon .fa-solid {
+    left: 82%;
+  }
+  .center .information .search {
+    width: 130px;
+    height: 35px;
+    font-weight: bold;
+    border-radius: 12px;
+    position: relative;
+    margin-left: 125px;
+    margin-right: 120px;
+  }
+  .center {
+    display: flex;
+    flex-direction: column;
+  }
+  .center .sign-up input {
+    width: 170px;
+    height: 35px;
+  }
+  .center .sign-up button {
+    width: 130px;
+    height: 35px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: auto;
+  }
+  .skills-land .text h3 {
+    font-size: 30px;
+  }
+  .skills-land img {
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+  }
+  .skills-land .skills h3 {
+    font-size: 10px;
+    text-align: center;
+  }
+  .contact .contact-text {
+    margin-top: -60px;
+  }
+  .contact .contact-text h3 {
+    font-size: 40px;
+  }
+  .contact .contact-text h4 {
+    font-size: 70px;
+    margin-bottom: 185px;
+  }
+  .contact-info p {
+    font-size: 15px;
+  }
+  .contact .contact-info .link {
+    font-size: 25px;
+  }
+  .landing-page .links.open {
+    background-color: #111419;
+    padding: 10px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    width: fit-content;
+    border-radius: 4px;
+    text-align: right;
+  }
+  .landing-page .links.open li {
+    display: block;
+    margin: 10px;
+  }
+  .landing-page .links button {
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    display: block;
+  }
+  .landing-page .links ul {
+    display: block;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Medium Devices */
+  .container {
+    max-width: 720px;
+  }
+  .landing-page .links {
+    display: none;
+  }
+  .landing-page .burger-icon {
+    display: block;
+  }
+  .landing-page .header h3 {
+    font-size: 30px;
+  }
+  .center .information h4 {
+    font-size: 50px;
+  }
+  .center .information input {
+    width: 380px;
+    height: 50px;
+  }
+  .center .information .icon .fa-solid {
+    left: 82%;
+  }
+  .center .information .search {
+    width: 150px;
+    height: 45px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-left: 180px;
+  }
+  .center {
+    display: flex;
+    flex-direction: column;
+  }
+  .center .sign-up input {
+    width: 200px;
+    height: 45px;
+  }
+  .center .sign-up button {
+    width: 150px;
+    height: 45px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: auto;
+  }
+  .skills-land .text h3 {
+    font-size: 40px;
+  }
+  .skills-land img {
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
+  }
+  .skills-land .skills h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .contact .contact-text {
+    margin-top: -60px;
+  }
+  .contact .contact-text h3 {
+    font-size: 45px;
+  }
+  .contact .contact-text h4 {
+    font-size: 75px;
+    margin-bottom: 185px;
+  }
+  .contact-info p {
+    font-size: 20px;
+  }
+  .contact .contact-info .link {
+    font-size: 30;
+  }
+  .landing-page .links.open {
+    background-color: #111419;
+    padding: 10px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    width: fit-content;
+    border-radius: 4px;
+    text-align: right;
+  }
+  .landing-page .links.open li {
+    display: block;
+    margin: 10px;
+  }
+  .landing-page .links button {
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    display: block;
+  }
+  .landing-page .links ul {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  /* PC Devices */
+  .container {
+    max-width: 960px;
+  }
+  .landing-page .links {
+    display: none;
+  }
+  .landing-page .burger-icon {
+    display: block;
+  }
+  .landing-page .header h3 {
+    font-size: 30px;
+  }
+  .center .information h4 {
+    font-size: 55px;
+  }
+  .center .information input {
+    width: 410px;
+    height: 55px;
+  }
+  .center .information .icon .fa-solid {
+    left: 82%;
+  }
+  .center .information .search {
+    width: 175px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-left: 185px;
+  }
+  .center {
+    display: flex;
+    flex-direction: column;
+  }
+  .center .sign-up input {
+    width: 250px;
+    height: 50px;
+  }
+  .center .sign-up button {
+    width: 150px;
+    height: 45px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: auto;
+  }
+  .skills-land .text h3 {
+    font-size: 45px;
+  }
+  .skills-land img {
+    width: 200px;
+    height: 200px;
+    margin-left: 15px;
+  }
+  .skills-land .skills h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .contact .contact-text {
+    margin-top: -60px;
+  }
+  .contact .contact-text h3 {
+    font-size: 50px;
+  }
+  .contact .contact-text h4 {
+    font-size: 80px;
+    margin-bottom: 185px;
+  }
+  .contact-info p {
+    font-size: 25px;
+  }
+  .contact .contact-info .link {
+    font-size: 35;
+  }
+  .landing-page .links.open {
+    background-color: #111419;
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 4px;
+    /* margin-right: 30px; */
+    color: var(--main-color);
+  }
+  .landing-page .links button {
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    margin-right: 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    max-width: 1160px;
+  }
+
+  .landing-page .links {
+    display: none;
+  }
+  .landing-page .burger-icon {
+    display: block;
+  }
+  .landing-page .header h3 {
+    font-size: 30px;
+  }
+  .center .information h4 {
+    font-size: 55px;
+  }
+  .center .information input {
+    width: 410px;
+    height: 55px;
+  }
+  .center .information .icon .fa-solid {
+    left: 82%;
+  }
+  .center .information .search {
+    width: 175px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-left: 185px;
+  }
+
+  .center .sign-up input {
+    width: 250px;
+    height: 50px;
+  }
+  .center .sign-up button {
+    width: 150px;
+    height: 45px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: auto;
+  }
+  .skills-land .text h3 {
+    font-size: 45px;
+  }
+  .skills-land img {
+    width: 200px;
+    height: 200px;
+    margin-left: 15px;
+  }
+  .skills-land .skills h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .contact .contact-text {
+    margin-top: -60px;
+  }
+  .contact .contact-text h3 {
+    font-size: 50px;
+  }
+  .contact .contact-text h4 {
+    font-size: 80px;
+    margin-bottom: 185px;
+  }
+  .contact-info p {
+    font-size: 25px;
+  }
+  .contact .contact-info .link {
+    font-size: 35;
+  }
+  .landing-page .links.open {
+    background-color: #111419;
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 4px;
+    color: var(--main-color);
+  }
+  .landing-page .links button {
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    margin-right: 30px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .center .information h4 {
+    font-size: 65px;
+  }
+  .center .information input {
+    width: 750px;
+    height: 60px;
+  }
+  .center .information .icon .fa-solid {
+    left: 93%;
+  }
+}
